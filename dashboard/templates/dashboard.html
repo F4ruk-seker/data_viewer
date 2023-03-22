@@ -1,0 +1,100 @@
+{% extends 'dashboard_base.html' %}
+
+{% block content %}
+
+<section class="container">
+
+{% for sube in subes %}
+    <div class="row border-bottom border-info" style="height: 220px">
+        <div class="m-auto" style="width: 20px" >
+            <h2 >
+            {{ forloop.counter }}.
+            </h2>
+        </div>
+        <div class="col-4 m-auto">
+            <h2>{{ sube.name }}</h2>
+
+        </div>
+        <div class="col d-flex m-auto">
+            <div class="border-end pe-3" style="height: 200px;width: 200px">
+                <canvas  id="sube_pasta_grafik_{{ forloop.counter }}"></canvas>
+            </div>
+            <div class="ps-3" style="height: 200px;width: 400px">
+                <canvas id="sube_cizgi_grafik_{{ forloop.counter }}"></canvas>
+            </div>
+        </div>
+
+    </div>
+{% endfor %}
+<hr>
+<strong>p: render 0.00sec</strong>
+</section>
+
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" ></script>#}
+{% load static %}
+    <script src="{% static 'Chart.js' %}" ></script>
+
+<script>
+    const chart_config = {
+        plugins: {
+            legend: {
+                display: false
+            },
+            colors: {
+                enabled: false,
+                forceOverride: true
+            }
+        },
+        scales: {
+            y: {
+                display: false,
+                beginAtZero: false
+            }
+        }
+        }
+    const ctx = document.getElementById('sube_pasta_grafik_1');
+    const ctx_2 = document.getElementById('sube_cizgi_grafik_1');
+    new Chart(ctx, {
+    type: 'pie',
+    {#type: 'polarArea',#}
+    data: {
+    labels: ['içten', 'saygın', 'güçlü', 'yetkin','heyecan'],
+
+    datasets: [{
+        {#label: '# Yorum',#}
+        data: [25,34,50,75,80],
+        backgroundColor: [
+        'rgb(4,129,155)',
+        'rgb(14,176,0)',
+        'rgb(203,3,6)',
+        'rgb(231,107,19)',
+        'rgb(255,206,0)'
+        ],
+        borderWidth: 1,
+    }]
+    },
+    options: chart_config
+    });
+    new Chart(ctx_2, {
+    type: 'bar',
+    {#type: 'polarArea',#}
+    data: {
+    labels: ['içten', 'saygın', 'güçlü', 'yetkin','heyecan'],
+
+    datasets: [{
+        {#label: '# Yorum',#}
+        data: [25,34,50,75,80],
+        backgroundColor: [
+        'rgb(4,129,155)',
+        'rgb(14,176,0)',
+        'rgb(203,3,6)',
+        'rgb(231,107,19)',
+        'rgb(255,206,0)'
+        ],
+        borderWidth: 1,
+    }]
+    },
+    {#options: chart_config#}
+    });
+</script>
+{% endblock %}
