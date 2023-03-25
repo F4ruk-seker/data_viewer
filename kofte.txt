@@ -1,0 +1,143 @@
+<li>İZMİR / Aliağa – EKMEK ARASI Y</li>
+<li>İZMİR / Alsancak – KÖFTECİ YUSUF</li>
+<li>İZMİR / Bahçelievler – KÖFTECİ YUSUFGüzelbahçe/İzmir</li>
+<li>İZMİR / Balçova Egepark – KÖFTECİ YUSUF – DÖNER YKarabağlar/İzmir</li>
+<li>İZMİR / Bornova – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İZMİR / Buca – EKMEK ARASI Y</li>
+<li>İZMİR / Buca Gölet – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İZMİR / Çandarlı Otoban İstanbul Yönü – KÖFTECİ YUSUF</li>
+<li>İZMİR / Çandarlı Otoban İzmir Yönü – KÖFTECİ YUSUF</li>
+<li>İZMİR / Gaziemir – EKMEK ARASI Y</li>
+<li>İZMİR / Girne Bulvarı – KÖFTECİ YUSUF</li>
+<li>İZMİR / Güzelbahçe – KÖFTECİ YUSUF</li>
+<li>İZMİR / Işıkkent – KÖFTECİ YUSUF</li>
+<li>İZMİR / Karabağlar – EKMEK ARASI Y</li>
+<li>İZMİR / Kemeraltı – EKMEK ARASI Y</li>
+<li>İZMİR / Mavişehir – KÖFTECİ YUSUF</li>
+<li>İZMİR / Menemen – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İZMİR / Mistral – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İZMİR / Örnekköy – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İZMİR / Park AVM – EKMEK ARASI Y</li>
+<li>İZMİR / Selway Outlet – DÖNER Y</li>
+<li>İZMİR / Selway Outlet – KÖFTECİ YUSUF</li>
+<li>İZMİR / Şirinyer – EKMEK ARASI Y</li>
+<li>İZMİR / Torbalı – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>YSS Çiftalan – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>YSS Reşadiye – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Alyapark Avm – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Arnavutköy Avlu 34 AVM – KÖFTECİ YUSUF</li>
+<li>Ataşehir – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Avcılar – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Bağcılar OASİS AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Bağdat Caddesi – EKMEK ARASI Y</li>
+<li>Bahçelievler Kadir Has AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Bakırköy Meydan – EKMEK ARASI Y</li>
+<li>Batışehir – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Beylikdüzü – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Biz Cevahir Haliç AVM – BURGER Y</li>
+<li>Biz Cevahir Haliç AVM – KÖFTECİ YUSUF</li>
+<li>Bostancı – BURGER Y</li>
+<li>Bostancı İskele – EKMEK ARASI Y</li>
+<li>Büyükçekmece Güzelce – DÖNER Y</li>
+<li>CarrefourSA Ataşehir – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Çekmeköy – KÖFTECİ YUSUF</li>
+<li>Çengelköy Güzeltepe – EKMEK ARASI Y</li>
+<li>Deposite AVM – DÖNER Y</li>
+<li>Deposite AVM – KÖFTECİ YUSUF</li>
+<li>Dudullu Metrocorner AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Esenyurt Meydan – EKMEK ARASI Y</li>
+<li>Fortis – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Güneş – EKMEK ARASI Y</li>
+<li>Güneşli Cornerlife – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Güngören Park AVM – BURGER Y</li>
+<li>Güngören Park AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Halkalı – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Harem İskele – EKMEK ARASI Y</li>
+<li>Ispartakule – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>İstoç – EKMEK ARASI Y</li>
+<li>Kadıköy Rıhtım – KÖFTECİ YUSUF</li>
+<li>Kartal Sahil – EKMEK ARASI Y</li>
+<li>Kartal Uğur Mumcu – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Kozyatağı – EKMEK ARASI Y</li>
+<li>Küçükbakkalköy – KÖFTECİ YUSUF</li>
+<li>Kurtköy Kuzey – EKMEK ARASI Y</li>
+<li>Ömerli YSS – EKMEK ARASI Y</li>
+<li>Ortaköy – EKMEK ARASI Y</li>
+<li>Pashador AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Pendik İDO – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Pendorya AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Real Merter – EKMEK ARASI Y</li>
+<li>Ritim AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Sahrayıcedit – KÖFTECİ YUSUF</li>
+<li>Sancaktepe Denge Tower – KÖFTECİ YUSUF</li>
+<li>Sancaktepe Rings AVM – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Sapphire Avm KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Sarıyer – KÖFTECİ YUSUF</li>
+<li>Sefaköy – EKMEK ARASI Y</li>
+<li>Sirkeci Alakart – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Sirkeci İskele – EKMEK ARASI Y</li>
+<li>Şişli Blackout – EKMEK ARASI Y</li>
+<li>Soyak Yenişehir – KÖFTECİ YUSUFÜmraniye Akyaka Park AVM – KÖFTECİ YUSUF</li>
+<li>Ümraniye Atakent – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>Ümraniye Çarşı – EKMEK ARASI Y</li>
+<li>Ümraniye Sanayi – EKMEK ARASI Y</li>
+<li>Üsküdar Bağlarbaşı Ekcan AVM – KÖFTECİ YUSUF</li>
+<li>Yenikapı İskele – EKMEK ARASI Y</li>
+<li>Zeytinburnu – EKMEK ARASI Y</li>
+<li>BURSA / Akçağlayan – KÖFTECİ YUSUF</li>
+<li>BURSA / As Outlet – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Balibey Han – EKMEK ARASI Y</li>
+<li>BURSA / Çiftehavuzlar – EKMEK ARASI Y</li>
+<li>BURSA / Değirmenönü – EKMEK ARASI Y</li>
+<li>BURSA / Demirtaş – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Demirtaş Parkur AVM – DÖNER Y</li>
+<li>BURSA / Dikkaldırım – EKMEK ARASI Y</li>
+<li>BURSA / Emek – EKMEK ARASI Y</li>
+<li>BURSA / Gemlik – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Görükle – DÖNER Y</li>
+<li>BURSA / Görükle – KÖFTECİ YUSUF</li>
+<li>BURSA / Güzelyalı İskele- EKMEK ARASI Y</li>
+<li>BURSA / Heykel – EKMEK ARASI Y</li>
+<li>BURSA / İhsaniye – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / İstanbul Yönü Gemlik Otoban – KÖFTECİ YUSUF</li>
+<li>BURSA / İzmir Yönü Gemlik Otoban – KÖFTECİ YUSUF</li>
+<li>BURSA / İznik – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Karacabey – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Karaman – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Kestel – KÖFTECİ YUSUF</li>
+<li>BURSA / Kestel Park – KÖFTECİ YUSUF</li>
+<li>BURSA / Küçük Sanayi – EKMEK ARASI Y</li>
+<li>BURSA / Küçükbalıklı – EKMEK ARASI Y</li>
+<li>BURSA / Mihraplı Park – EKMEK ARASI Y</li>
+<li>BURSA / Mihraplı Park – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Mudanya – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Nilüfer OSB – EKMEK ARASI Y</li>
+<li>BURSA / Orhangazi – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Ovaakça – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Özlüce – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Sular Vadisi – DÖNER Y</li>
+<li>BURSA / Üçevler – EKMEK ARASI Y</li>
+<li>BURSA / Uluyol – EKMEK ARASI Y</li>
+<li>BURSA / Yalova Yolu – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>BURSA / Yalova Yolu Metro – DÖNER Y</li>
+<li>BURSA / Yavuz Selim – EKMEK ARASI Y</li>
+<li>BURSA / Yenişehir – EKMEK ARASI Y</li>
+<li>BURSA / Yenişehir Köfteci Yusuf Entegre Tesisi-HESAPLI KASAP</li>
+<li>BURSA / Yeşilyayla – EKMEK ARASI Y</li>
+<li>BURSA / Yıldırım Balaban – KÖFTECİ YUSUF</li>
+<li>BURSA / Yunuseli – KÖFTECİ YUSUF – DÖNER Y</li>
+<li>ANKARA / Atayıldız – KÖFTECİ YUSUF</li>
+<li>ANKARA / Çankaya 365 AVM</li>
+<li>ANKARA / Çankaya Koç Kuleleri – KÖFTECİ YUSUF</li>
+<li>ANKARA / Çayyolu – KÖFTECİ YUSUF</li>
+<li>ANKARA / Elmadağ – KÖFTECİ YUSUF</li>
+<li>ANKARA / Eskişehir Yolu – KÖFTECİ YUSUF</li>
+<li>ANKARA / Gimart Outlet – KÖFTECİ YUSUF</li>
+<li>ANKARA / Gimsa Piyade – KÖFTECİ YUSUF</li>
+<li>ANKARA / Gökçehöyük Ankara Yönü Otoban – KÖFTECİ YUSUF</li>
+<li>ANKARA / Gökçehöyük Niğde Yönü Otoban – KÖFTECİ YUSUF</li>
+<li>ANKARA / Podium Avm – KÖFTECİ YUSUF</li>
+<li>ANKARA / Pursaklar – KÖFTECİ YUSUF</li>
+<li>ANKARA /Maltepe Pazar – EKMEK ARASI</li>
+<li>Ankara Şereflikoçhisar Ankara Yönü Otoban</li>
+<li>Ankara Şereflikoçhisar Niğde Yönü Otoban – KÖFTECİ YUSUF – DÖNER</li>

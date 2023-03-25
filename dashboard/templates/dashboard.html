@@ -1,6 +1,10 @@
 {% extends 'dashboard_base.html' %}
 
 {% block content %}
+<section class="container pt-4">
+{% include 'dashboard_search_with_detail.html' %}
+<hr>
+</section>
 
 <section class="container">
 
@@ -15,7 +19,7 @@
             <h2>{{ sube.name }}</h2>
 
         </div>
-        <div class="col d-flex m-auto">
+        <div class="col d-flex m-auto text-center justify-content-end" >
             <div class="border-end pe-3" style="height: 200px;width: 200px">
                 <canvas  id="sube_pasta_grafik_{{ forloop.counter }}"></canvas>
             </div>
@@ -26,8 +30,6 @@
 
     </div>
 {% endfor %}
-<hr>
-<strong>p: render 0.00sec</strong>
 </section>
 
 {#<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" ></script>#}
