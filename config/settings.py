@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 ]+[
     'dashboard',
     'product_operation',
+]+[
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,129 @@
+{% extends 'dashboard_base.html' %}
+
+{% block content %}
+<section class="container pt-4">
+{% include 'dashboard_search_with_detail.html' %}
+<hr>
+</section>
+
+<section class="container" id="office_data_view">
+
+
+</section>
+
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" ></script>#}
+{% load static %}
+<script src="{% static 'Chart.js' %}" load="lazy"></script>
+
+{{ office_data | json_script:"office_data" }}
+<script>
+ const CHART_CONFIG = {
+        plugins: {
+            legend: {
+                display: false
+            },
+            colors: {
+                enabled: false,
+                forceOverride: true
+            }
+        },
+        scales: {
+            y: {
+                display: false,
+                beginAtZero: false
+            }
+        }, animation: {
+        duration: 0
+    }
+
+        }
+
+
+    const OFFICE_DATA = JSON.parse(document.getElementById('office_data').textContent);
+    var office_data_view = document.getElementById('office_data_view')
+    var counter = 0
+    function create_data_viewers() {
+        for (const office of OFFICE_DATA) {
+
+            counter ++
+            office_data_view.innerHTML += `
+        <div class="row border-bottom border-info pt-2">
+            <div class="col">
+                <p class="p-0 m-0 fs-4 fw-medium font-monospace">${counter}.${ office.name }</p>
+                <p class="p-0 m-0 text-secondary">Yetkin :20% </p>
+                {#<h3>{{ sube.performance.get_total_metric }}</h3>#}
+            </div>
+            <div class="col d-flex text-center justify-content-end" >
+                <div class="border-end pe-3" style="height: 150px;width: 150px">
+                    <canvas  id="sube_pasta_grafik_${ office.id }"></canvas>
+                </div>
+                <div class="ps-3" m-auto style="height: 150px;width: 300px">
+                    <canvas id="sube_cizgi_grafik_${ office.id }"></canvas>
+                </div>
+            </div>
+        </div>
+        `
+
+    }}
+
+    function create_charts() {
+        for (const office of OFFICE_DATA) {
+        var ctx = document.getElementById('sube_pasta_grafik_'+office.id);
+        var ctx_2 = document.getElementById('sube_cizgi_grafik_'+office.id);
+        new Chart(ctx, {
+        type: 'pie',
+        data: {
+        labels: ['içten', 'saygın', 'güçlü', 'yetkin','heyecan'],
+        datasets: [{
+            data: office.data,
+            backgroundColor: [
+            'rgb(4,129,155)',
+            'rgb(14,176,0)',
+            'rgb(203,3,6)',
+            'rgb(231,107,19)',
+            'rgb(255,206,0)'
+            ],
+            borderWidth: 1,
+        }]
+        },
+        options: CHART_CONFIG
+        });
+        new Chart(ctx_2, {
+            type: 'bar',
+            options: { animation: {
+        duration: 0
+    }},
+            data: {
+                labels: ['içten', 'saygın', 'güçlü', 'yetkin','heyecan'],
+
+                datasets: [{
+                    label: 'Yüzdelik',
+                    data: office.data,
+                    backgroundColor: [
+                    'rgb(4,129,155)',
+                    'rgb(14,176,0)',
+                    'rgb(203,3,6)',
+                    'rgb(231,107,19)',
+                    'rgb(255,206,0)'
+                    ],
+                    borderWidth: 1,
+                    }]
+                },
+            });
+
+        }
+    }
+
+
+
+function load_page() {
+    create_data_viewers()
+    create_charts()
+}
+load_page()
+
+
+</script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+{% endblock %}

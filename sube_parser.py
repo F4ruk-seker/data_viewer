@@ -1,3 +1,4 @@
+import json
 
 
 def load_data_file() -> list:
@@ -25,4 +26,34 @@ def get_test_data_status():
     for _ in data:
         print(_)
 
-get_test_data_status()
+import random
+pk_count = 2
+def create_fake_office(name):
+    global pk_count
+    pk_count += 1
+
+
+    return {"model": "product_operation.office", "pk": pk_count,
+            "fields": {"name": name,
+                       "performance": pk_count}
+            }
+def create_fake_office_data():
+    global pk_count
+    return {"model": "product_operation.performancemetric", "pk": pk_count,
+               "fields": {"sincere_count": random.randint(200,3000),
+                          "reputable_count": random.randint(200,3000),
+                          "powerful_count": random.randint(200,3000),
+                          "competence_count": random.randint(200,3000),
+                          "excitement_count": random.randint(200,3000)}
+               }
+
+subes = get_test_data()
+
+result = []
+for sube in subes:
+    result.append(create_fake_office(sube))
+    result.append(create_fake_office_data())
+
+with open('fake_office.json','w+',encoding='utf-8') as fake_data:
+    fake_data.write(json.dumps(result))
+

@@ -11,19 +11,19 @@
 {% for sube in subes %}
     <div class="row border-bottom border-info" style="height: 220px">
         <div class="m-auto" style="width: 20px" >
-            <h2 >
+            <h3 >
             {{ forloop.counter }}.
-            </h2>
+            </h3>
         </div>
-        <div class="col-4 m-auto">
-            <h2>{{ sube.name }}</h2>
-
+        <div class="col m-auto">
+            <h3>{{ sube.name }}</h3>
+            <h3>{{ sube.performance.get_total_metric }}</h3>
         </div>
         <div class="col d-flex m-auto text-center justify-content-end" >
-            <div class="border-end pe-3" style="height: 200px;width: 200px">
+            <div class="border-end pe-3" style="height: 150px;width: 150px">
                 <canvas  id="sube_pasta_grafik_{{ forloop.counter }}"></canvas>
             </div>
-            <div class="ps-3" style="height: 200px;width: 400px">
+            <div class="ps-3" style="height: 150px;width: 300px">
                 <canvas id="sube_cizgi_grafik_{{ forloop.counter }}"></canvas>
             </div>
         </div>
@@ -37,6 +37,7 @@
     <script src="{% static 'Chart.js' %}" ></script>
 
 <script>
+    const OFFICE_DATA = {{ None }}
     const chart_config = {
         plugins: {
             legend: {
@@ -99,4 +100,6 @@
     {#options: chart_config#}
     });
 </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 {% endblock %}
