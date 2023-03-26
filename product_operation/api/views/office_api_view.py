@@ -7,9 +7,10 @@ from rest_framework.generics import ListAPIView
 
 class OfficeListView(ListAPIView):
     serializer_class = OfficeSerializer
-    queryset = Office.objects.all()
     pagination_class = OfficePagination
     filter_backends = [filters.SearchFilter]
+    queryset = Office.objects.all().order_by("name")
     search_fields = ['name']
     ordering_fields = ['name']
+    ordering = 'name'
 

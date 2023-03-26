@@ -5,7 +5,6 @@ from product_operation.models import Office
 
 class MainPage(View):
 
-
     def get(self,request):
         office_data = []
 
