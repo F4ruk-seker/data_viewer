@@ -7,16 +7,31 @@
 </section>
 
 <section class="container" id="office_data_view">
-
-
 </section>
-
+<section class="container" id="office_data_view_loader">
+<div class="spinner-grow" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 {#<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" ></script>#}
 {% load static %}
 <script src="{% static 'Chart.js' %}" load="lazy"></script>
 
 {{ office_data | json_script:"office_data" }}
 <script>
+
+$('#search_bar').keydown(function(event){
+    var id = event.key || event.which || event.keyCode || 0;
+
+    if (id == 13 || id == 'Enter') {
+        $('#office_data_view_loader').fadeIn()
+        search_field();
+        $('#office_data_view_loader').fadeOut()
+
+    }
+});
  const CHART_CONFIG = {
         plugins: {
             legend: {
@@ -37,12 +52,17 @@
     }
 
         }
-
-
-    const OFFICE_DATA = JSON.parse(document.getElementById('office_data').textContent);
     var office_data_view = document.getElementById('office_data_view')
     var counter = 0
-    function create_data_viewers() {
+    {#const OFFICE_DATA = JSON.parse(document.getElementById('office_data').textContent);#}
+    var OFFICE_DATA = []
+
+    function load_data_views_from_api(){
+        {#const OFFICE_DATA = JSON.parse(document.getElementById('office_data').textContent);#}
+
+    }
+
+    function create_data_viewers(OFFICE_DATA) {
         for (const office of OFFICE_DATA) {
 
             counter ++
@@ -55,27 +75,28 @@
             </div>
             <div class="col d-flex text-center justify-content-end" >
                 <div class="border-end pe-3" style="height: 150px;width: 150px">
-                    <canvas  id="sube_pasta_grafik_${ office.id }"></canvas>
+                    <canvas  id="sube_pasta_grafik_${ counter }"></canvas>
                 </div>
                 <div class="ps-3" m-auto style="height: 150px;width: 300px">
-                    <canvas id="sube_cizgi_grafik_${ office.id }"></canvas>
+                    <canvas id="sube_cizgi_grafik_${ counter }"></canvas>
                 </div>
             </div>
         </div>
         `
 
     }}
-
-    function create_charts() {
+    counter_second = 0
+    function create_charts(OFFICE_DATA) {
         for (const office of OFFICE_DATA) {
-        var ctx = document.getElementById('sube_pasta_grafik_'+office.id);
-        var ctx_2 = document.getElementById('sube_cizgi_grafik_'+office.id);
+            counter_second ++
+        var ctx = document.getElementById('sube_pasta_grafik_'+counter_second);
+        var ctx_2 = document.getElementById('sube_cizgi_grafik_'+counter_second);
         new Chart(ctx, {
         type: 'pie',
         data: {
         labels: ['içten', 'saygın', 'güçlü', 'yetkin','heyecan'],
         datasets: [{
-            data: office.data,
+            data: office.performance.metric,
             backgroundColor: [
             'rgb(4,129,155)',
             'rgb(14,176,0)',
@@ -98,7 +119,7 @@
 
                 datasets: [{
                     label: 'Yüzdelik',
-                    data: office.data,
+                    data: office.performance.metric,
                     backgroundColor: [
                     'rgb(4,129,155)',
                     'rgb(14,176,0)',
@@ -117,13 +138,54 @@
 
 
 function load_page() {
+
     create_data_viewers()
     create_charts()
 }
-load_page()
+var api_data = null
+var api_url =  "http://"+ document.location.host + "/api"
+$('document').ready(api_gender(api_url))
 
 
+ function api_gender(url) {
+     $.ajax({
+      url: url,
+      method: 'GET',
+      contentType: 'application/json',
+      success: function(response) {
+        $('#office_data_view_loader').fadeIn()
+        create_data_viewers(response)
+        create_charts(response)
+        $('#office_data_view_loader').fadeOut()
+
+      },
+      error: function(xhr, status, error) {
+        // Hata durumunda buraya düşer
+        console.log(status + ': ' + error);
+      }
+    });
+ }
+
+function search_field() {
+    var api_url = "http://127.0.0.1:8000/api/?search="
+    var search_test = document.getElementById('search_bar')
+     $.ajax({
+      url: api_url+search_test.value,
+      method: 'GET',
+      contentType: 'application/json',
+      success: function(response) {
+        office_data_view.innerHTML = ''
+          search_test.activate = false
+        create_data_viewers(response)
+        create_charts(response)
+      },
+      error: function(xhr, status, error) {
+        // Hata durumunda buraya düşer
+        console.log(status + ': ' + error);
+      }
+    });
+}
 </script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 
 {% endblock %}
