@@ -85,7 +85,7 @@ $('#search_bar').keydown(function(event){
         `
 
     }}
-    counter_second = 0
+    var counter_second = 0
     function create_charts(OFFICE_DATA) {
         for (const office of OFFICE_DATA) {
             counter_second ++
@@ -176,6 +176,8 @@ function search_field() {
       success: function(response) {
         office_data_view.innerHTML = ''
           search_test.activate = false
+          counter = 0
+          counter_second = 0
         create_data_viewers(response)
         create_charts(response)
       },
