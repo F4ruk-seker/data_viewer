@@ -175,9 +175,9 @@ function search_field() {
       contentType: 'application/json',
       success: function(response) {
         office_data_view.innerHTML = ''
-          search_test.activate = false
-          counter = 0
-          counter_second = 0
+        search_test.activate = false
+        counter = 0
+        counter_second = 0
         create_data_viewers(response)
         create_charts(response)
       },

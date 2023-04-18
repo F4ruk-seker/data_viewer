@@ -1,6 +1,26 @@
 {% load static %}
-<div class="border bg-dark rounded" style="height: 300px;background: url('{% static 'temp_img/mapslong.bmp' %}') no-repeat center;"></div>
-<div class="my-3 d-flex">
-    <input type="text" class="form form-control ms-2" id="search_bar">
+{#<div class="border bg-dark rounded" style="height: 300px;background: url('{% static 'temp_img/mapslong.bmp' %}') no-repeat center;"></div>#}
+<style>
+    #map{
+        height: 250px!important;
+        z-index: -1;
+    }
+    #map div {
+        height: 250px!important;
+    }
+    #map div div {
+        padding-bottom: 0!important;
+    }
+    #map body {
+        height: 250px;
+    }
+</style>
+
+<div class="border bg-dark rounded" id="map">
+{{ map|safe }}
+</div>
+<div class="my-3 d-flex" style="z-index: 99">
+    <input type="text" class="form form-control me-2" id="search_bar">
     <button class="btn btn-primary" onclick="search_field()">Ara</button>
 </div>
+
